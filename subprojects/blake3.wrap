@@ -1,5 +1,5 @@
 [wrap-file]
-directory = BLAKE3-1.4.1-meson
-source_url = https://github.com/nirs/BLAKE3/archive/refs/tags/1.4.1-meson.tar.gz
-source_filename = BLAKE3-1.4.1-meson.tar.gz
-source_hash = 5e2f49fd8ec75583891addc87486c95ff6768a7de714874d1574c7c22f4a3afc
+directory = BLAKE3-1.4.1-cmake
+source_url = https://github.com/nirs/BLAKE3/archive/refs/tags/1.4.1-cmake.tar.gz
+source_filename = BLAKE3-1.4.1-cmake.tar.gz
+source_hash = 6c6f053ede700d76d12a7ced7bbd640e7a47f97122fe4cbe718aa9406251d043

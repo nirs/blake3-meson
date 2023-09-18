@@ -1,10 +1,5 @@
-project(
-  'blake3-meson', 'c',
-  default_options: [
-    'buildtype=release',
-  ]
-)
-
-blake3_dep = dependency('blake3', fallback : ['blake3', 'blake3_dep'])
-
-executable('example', 'example.c', dependencies : blake3_dep)
+project('blake3-meson', 'c', version: '0.1', default_options: ['buildtype=release'])
+cmake = import('cmake')
+blake3_subproj = cmake.subproject('blake3')
+blake3_dep = blake3_subproj.dependency('blake3')
+executable('example', ['example.c'], dependencies: blake3_dep)
